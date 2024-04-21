@@ -32,7 +32,7 @@ class Config:
             self.BOT_TOKEN = config("BOT_TOKEN")
             self.CACHE_DL = config("CACHE_DL", default=False, cast=bool)
             self.CAP_DECO = config("CAP_DECO", default="◉")
-            self.C_LINK = config("C_LINK", default="@ANi_MiNE")
+            self.C_LINK = config("C_LINK", default="@Anime_Compass")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.DATABASE_URL = config("DATABASE_URL", default=None)
             self.DBNAME = config("DBNAME", default="ENC")
@@ -49,7 +49,7 @@ class Config:
             self.FCODEC = config("FCODEC", default=None)
             self.FFMPEG = config(
                 "FFMPEG",
-                default='ffmpeg -i "{}" -metadata:s:v:0 title="[Anime Compass] : (This Episode)" -metadata:s:a:0 title="[Telegram: @Anime_Compass]" -metadata:s:a:1 title="[Telegram: @Anime_Compass]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="@Anime_Compass" -metadata author="@Anime_Compass" -metadata:s:s title="@Anime_Compass" -metadata:s:a title="@Anime_Compass" -metadata:s:v title="@Anime_compass" -c:v libx264 -pix_fmt yuv420p10le -preset veryfast -s 480x360 -crf 28 -c:a libopus -ac 2 -vbr 2 -ab 64k -c:s copy -movflags +faststart -vf "drawtext=fontfile=Imprima_Love.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:text=Anime Compass" "{}" -y',
+                default='ffmpeg -i "{}" -metadata:s:v:0 title="[Anime Compass] : (This Episode)" -metadata:s:a:0 title="[Telegram: @Anime_Compass]" -metadata:s:a:1 title="[Telegram: @Anime_Compass]" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title="@Anime_Compass" -metadata author="@Anime_Compass" -metadata:s:s title="@Anime_Compass" -metadata:s:a title="@Anime_Compass" -metadata:s:v title="@Anime_compass" -c:v libx264 -pix_fmt yuv420p10le -preset veryfast -s 480x360 -crf 28 -c:a libopus -ac 2 -vbr 2 -ab 64k -c:s copy -movflags +faststart -vf "drawtext=fontfile=Imprima_Love.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:text=Anime Compass" "{}"',
             )
             self.FL_CAP = config("FILENAME_AS_CAPTION", default=True, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
@@ -69,7 +69,7 @@ class Config:
             self.RSS_CHAT = config("RSS_CHAT", default=0, cast=int)
             self.RSS_DELAY = config("RSS_DELAY", default=60, cast=int)
             self.RSS_DIRECT = config("RSS_DIRECT", default=True, cast=bool)
-            self.RELEASER = config("RELEASER", default="A-M|ANi-MiNE")
+            self.RELEASER = config("RELEASER", default="AC🧭|@Anime_Compass")
             self.TELEGRAPH_API = config(
                 "TELEGRAPH_API", default="https://api.telegra.ph"
             )
