@@ -417,11 +417,7 @@ async def thing():
         mux_msg = f"Muxed in `{mtime}`\n" if mux_args else str()
 
         text = str()
-        mi = await info(dl)
-        forward_task = asyncio.create_task(forward_(name, out, up, mi, f))
-
-    
-        
+               
         await forward_task
 
         skip(queue_id)
