@@ -428,7 +428,7 @@ async def thing():
             disable_web_page_preview=True,
             quote=True,
         )
-        await mi_msg.copy(chat_id=log_channel) if op else None
+        await mi_msg.copy(log_channel) if op else None
 
         st_msg = await up.reply(
             f"**Encode Stats:**\n\nOriginal Size: "
@@ -439,7 +439,7 @@ async def thing():
             disable_web_page_preview=True,
             quote=True,
         )
-        await st_msg.copy(chat_id=log_channel) if op else None
+        await st_msg.copy(log_channel) if op else None
         await forward_task
 
         skip(queue_id)
