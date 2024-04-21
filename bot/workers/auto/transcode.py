@@ -420,24 +420,7 @@ async def thing():
         mi = await info(dl)
         forward_task = asyncio.create_task(forward_(name, out, up, mi, f))
 
-        text += f"**Source:** `[{rlsgrp}]`"
-        if mi:
-            text += f"\n\nMediainfo: **[(Source)]({mi})**"
-        mi_msg = await up.reply(
-            text,
-            disable_web_page_preview=True,
-            quote=True,
-        )
-
-        st_msg = await up.reply(
-            f"**Encode Stats:**\n\nOriginal Size: "
-            f"`{hbs(org_s)}`\nEncoded Size: `{hbs(out_s)}`\n"
-            f"Encoded Percentage: `{per}`\n\n"
-            f"{'Cached' if einfo.cached_dl else 'Downloaded'} in `{dtime}`\n"
-            f"Encoded in `{etime}`\n{mux_msg}Uploaded in `{utime}`",
-            disable_web_page_preview=True,
-            quote=True,
-        )
+    
         
         await forward_task
 
