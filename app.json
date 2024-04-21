@@ -14,23 +14,27 @@
         },
         "APP_ID": {
             "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
-            "value": ""
+            "value": "25598099"
+        },
+        "RELEASER": {
+            "description": "Don't touch #bankai",
+            "value": "AC🧭|@Anime_Compass"
         },
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @apiScrapperRoBot.",
-            "value": ""
+            "value": "873f11d08a9625aa13e75a7f1536657f"
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": ""
+            "value": "7027816790:AAGBTg6cVKZH1jjwoM-fyMRl1S-KA8Getn8"
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
-            "value": ""
+            "value": "7030439873"
         },
         "LOG_CHANNEL": {
             "description": "Input Log Channel Id",
-            "value": "",
+            "value": "-1002123934104",
             "required": false
         },
         "WORKERS": {
@@ -40,12 +44,12 @@
         },
         "FCHANNEL": {
             "description": "Input Foward Channel Id",
-            "value": "",
+            "value": "-1002123934104",
             "required": false
         },
         "FCHANNEL_STAT": {
             "description": "Input Forward channel status message id",
-            "value": "",
+            "value": "-1002123934104",
             "required": false
         },
         "FBANNER": {
@@ -75,7 +79,7 @@
         },
         "DATABASE_URL": {
             "description": "Mongodb Database Url",
-            "value": ""
+            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.xkcj6zx.mongodb.net/?retryWrites=true&w=majority"
         },
         "FFMPEG": {
             "description": "Put your FFMPEG code.",
