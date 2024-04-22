@@ -51,7 +51,7 @@ class Config:
                 "FFMPEG",
                 default='ffmpeg -i "{}" -preset ultrafast -c:v libx265 -crf 27 -map 0:v -c:a aac -map 0:a -c:s copy -map 0:s? "{}"',
             )
-            self.FL_CAP = config("FILENAME_AS_CAPTION", default=True, cast=bool)
+            self.FL_CAP = config("FILENAME_AS_CAPTION", default=False, cast=bool)
             self.FS_THRESHOLD = config("FLOOD_SLEEP_THRESHOLD", default=600, cast=int)
             self.FSTICKER = config("FSTICKER", default=None)
             self.LOCK_ON_STARTUP = config("LOCK_ON_STARTUP", default=False, cast=bool)
