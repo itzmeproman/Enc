@@ -16,6 +16,10 @@
             "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
             "value": "25598099"
         },
+        "groupenc": {
+            "description": "Don't touch #bankai",
+            "value": "True"
+        },
         "RELEASER": {
             "description": "Don't touch #bankai",
             "value": "AC🧭|@Anime_Compass"
