@@ -20,6 +20,10 @@
             "description": "Don't touch #bankai",
             "value": "AC🧭|@Anime_Compass"
         },
+        "C_LINK": {
+            "description": "Don't touch #bankai",
+            "value": "@Anime_Compass"
+        },
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @apiScrapperRoBot.",
             "value": "873f11d08a9625aa13e75a7f1536657f"
