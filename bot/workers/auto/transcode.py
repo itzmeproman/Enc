@@ -403,29 +403,53 @@ async def thing():
                 await download.clean_download()
             s_remove(thumb2, dl, out)
             return
-            eut = time.time()
-            utime = tf(eut - sut)
+        eut = time.time()
+        utime = tf(eut - sut)
 
-            await msg_p.delete()
-            await op.delete() if op else None
-            await up.copy(chat_id=log_channel) if op else None
+        await msg_p.delete()
+        await op.delete() if op else None
+        await up.copy(chat_id=log_channel) if op else None
 
-            org_s = size_of(dl)
-            out_s = size_of(out)
-            pe = 100 - ((out_s / org_s) * 100)
-            per = str(f"{pe:.2f}") + "%"
-            mux_msg = f"Muxed in `{mtime}`\n" if mux_args else str()
+        org_s = size_of(dl)
+        out_s = size_of(out)
+        pe = 100 - ((out_s / org_s) * 100)
+        per = str(f"{pe:.2f}") + "%"
+        mux_msg = f"Muxed in `{mtime}`\n" if mux_args else str()
 
-            # Removed lines for sending encoding stats and media info message
+        text = str()
+        mi = await info(dl)
+        forward_task = asyncio.create_task(forward_(name, out, up, mi, f))
 
-            skip(queue_id)
-            mark_file_as_done(einfo.select, queue_id)
-            await save2db()
-            await save2db("batches")
-            s_remove(thumb2)
-            if download:
-                await download.clean_download()
-            s_remove(dl, out)
+        text += f"**Source:** `[{rlsgrp}]`"
+        if mi:
+            text += f"\n\nMediainfo: **[(Source)]({mi})**"
+        mi_msg = await up.reply(
+            text,
+            disable_web_page_preview=True,
+            quote=True,
+        )
+        await mi_msg.copy(log_channel) if op else None
+
+        st_msg = await up.reply(
+            f"**Encode Stats:**\n\nOriginal Size: "
+            f"`{hbs(org_s)}`\nEncoded Size: `{hbs(out_s)}`\n"
+            f"Encoded Percentage: `{per}`\n\n"
+            f"{'Cached' if einfo.cached_dl else 'Downloaded'} in `{dtime}`\n"
+            f"Encoded in `{etime}`\n{mux_msg}Uploaded in `{utime}`",
+            disable_web_page_preview=True,
+            quote=True,
+        )
+        await st_msg.copy(log_channel) if op else None
+        await forward_task
+
+        skip(queue_id)
+        mark_file_as_done(einfo.select, queue_id)
+        await save2db()
+        await save2db("batches")
+        s_remove(thumb2)
+        if download:
+            await download.clean_download()
+        s_remove(dl, out)
 
     except Exception:
         await logger(Exception)
