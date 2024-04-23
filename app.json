@@ -34,7 +34,7 @@
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": "7126616735:AAFkbBELMPqsrvnjMrcjxycveQSx_n-LnQM"
+            "value": "6889630282:AAELqGuZJ6_3eDBgj8X74Lurr200mZFI4Ss"
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
