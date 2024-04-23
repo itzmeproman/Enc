@@ -15,7 +15,7 @@ try:
     UPSTREAM_REPO = config(
         "UPSTREAM_REPO",
         default="https://github.com/itzmeproman/enc")
-    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="720p")
+    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="Ongoing-480")
 
 except Exception:
     print("Environment vars Missing")
