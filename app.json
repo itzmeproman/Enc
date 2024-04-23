@@ -42,7 +42,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Input Log Channel Id",
-            "value": "-1002123934104",
+            "value": "-1002051186705",
             "required": false
         },
         "WORKERS": {
@@ -52,12 +52,12 @@
         },
         "FCHANNEL": {
             "description": "Input Foward Channel Id",
-            "value": "-1002123934104",
+            "value": "-1002051186705",
             "required": false
         },
         "FCHANNEL_STAT": {
             "description": "Input Forward channel status message id",
-            "value": "-1002123934104",
+            "value": "-1002051186705",
             "required": false
         },
         "FBANNER": {
@@ -87,7 +87,7 @@
         },
         "DATABASE_URL": {
             "description": "Mongodb Database Url",
-            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.xkcj6zx.mongodb.net/?retryWrites=true&w=majority"
+            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.pdnhhxf.mongodb.net/?retryWrites=true&w=majority&appName=itzmeproman"
         },
         "FFMPEG": {
             "description": "Put your FFMPEG code.",
