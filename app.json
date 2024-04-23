@@ -20,6 +20,10 @@
             "description": "Don't touch #bankai",
             "value": "True"
         },
+        "FL_CAP": {
+            "description": "Don't touch #bankai",
+            "value": "False"
+        },
         "RELEASER": {
             "description": "Don't touch #bankai",
             "value": "AC🧭|@Anime_Compass"
