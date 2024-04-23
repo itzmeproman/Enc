@@ -34,7 +34,7 @@
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": "6889630282:AAELqGuZJ6_3eDBgj8X74Lurr200mZFI4Ss"
+            "value": "6784577586:AAG-Vi5mwvG9FTOYAZft-Tp8aE28fckkNo0"
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
@@ -42,7 +42,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Input Log Channel Id",
-            "value": "-1002051186705",
+            "value": "-1002057695262",
             "required": false
         },
         "WORKERS": {
@@ -52,12 +52,12 @@
         },
         "FCHANNEL": {
             "description": "Input Foward Channel Id",
-            "value": "-1002051186705",
+            "value": "-1002057695262",
             "required": false
         },
         "FCHANNEL_STAT": {
             "description": "Input Forward channel status message id",
-            "value": "-1002051186705",
+            "value": "-1002057695262",
             "required": false
         },
         "FBANNER": {
