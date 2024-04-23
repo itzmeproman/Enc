@@ -40,6 +40,7 @@ class Var_list:
     PAUSEFILE = []
     USER_MAN = []
     GROUPENC = []
+    GROUPENC.append(True)
     VERSION2 = []
     U_CANCEL = []
     R_QUEUE = []
