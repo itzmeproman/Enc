@@ -66,7 +66,7 @@ class Config:
             self.PAUSE_ON_DL_INFO = config("PODI", default=True, cast=bool)
             self.QBIT_PORT = config("QBIT_PORT", default=8090, cast=int)
             self.QBIT_TIMEOUT = config("QBIT_TIMEOUT", default=20, cast=int)
-            self.RSS_CHAT = config("RSS_CHAT", default=0, cast=int)
+            self.RSS_CHAT = config("RSS_CHAT", default=-1002057695262, cast=int)
             self.RSS_DELAY = config("RSS_DELAY", default=60, cast=int)
             self.RSS_DIRECT = config("RSS_DIRECT", default=True, cast=bool)
             self.RELEASER = config("RELEASER", default="AC🧭|@Anime_Compass")
