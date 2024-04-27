@@ -35,7 +35,7 @@ class Config:
             self.C_LINK = config("C_LINK", default="@Anime_Compass")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.DATABASE_URL = config("DATABASE_URL", default=None)
-            self.DBNAME = config("DBNAME", default="ENC1")
+            self.DBNAME = config("DBNAME", default="ENC1689897")
             self.DEV = config("DEV", default=0, cast=int)
             self.DL_STUFF = config("DL_STUFF", default=None)
             self.DUMP_CHANNEL = config("DUMP_CHANNEL", default=0, cast=int)
