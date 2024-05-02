@@ -34,7 +34,7 @@
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": "7027816790:AAGBTg6cVKZH1jjwoM-fyMRl1S-KA8Getn8"
+            "value": "7045617506:AAG6UT5l20SKEuaQOJ7-ug1lWfJXvPCzBvY"
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
@@ -42,7 +42,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Input Log Channel Id",
-            "value": "-1002123934104",
+            "value": "-1002048424878",
             "required": false
         },
         "WORKERS": {
@@ -52,12 +52,12 @@
         },
         "FCHANNEL": {
             "description": "Input Foward Channel Id",
-            "value": "-1002123934104",
+            "value": "-1002048424878",
             "required": false
         },
         "FCHANNEL_STAT": {
             "description": "Input Forward channel status message id",
-            "value": "-1002123934104",
+            "value": "-1002048424878",
             "required": false
         },
         "FBANNER": {
@@ -87,7 +87,7 @@
         },
         "DATABASE_URL": {
             "description": "Mongodb Database Url",
-            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.xkcj6zx.mongodb.net/?retryWrites=true&w=majority"
+            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.bg8wsm2.mongodb.net/?retryWrites=true&w=majority&appName=itzmeproman"
         },
                 "FFMPEG": {
             "description": "Put your FFMPEG code.",
