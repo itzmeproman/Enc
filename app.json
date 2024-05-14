@@ -18,11 +18,11 @@
         },
         "RELEASER": {
             "description": "Don't touch #bankai",
-            "value": "AC🧭|@Anime_Compass"
+            "value": "GRC|@Gi_Tamil_Cartoons"
         },
         "C_LINK": {
             "description": "Don't touch #bankai",
-            "value": "@Anime_Compass"
+            "value": "@Gi_Tamil_Cartoons"
         },
         "groupenc": {
             "description": "Don't touch #bankai",
@@ -34,7 +34,7 @@
         },
         "BOT_TOKEN": {
             "description": "Make a bot from @BotFather, and enter it's api token here.",
-            "value": "7045617506:AAG6UT5l20SKEuaQOJ7-ug1lWfJXvPCzBvY"
+            "value": "7042741787:AAH9bOXEdp3ccp8ZlKfi8FK7KLmslosp_04"
         },
         "OWNER": {
             "description": "Get ur Id Of Telegram nd Paste Here.",
@@ -87,11 +87,11 @@
         },
         "DATABASE_URL": {
             "description": "Mongodb Database Url",
-            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.bg8wsm2.mongodb.net/?retryWrites=true&w=majority&appName=itzmeproman"
+            "value": "mongodb+srv://itzmeproman:itzmeproman@itzmeproman.ccssik6.mongodb.net/?retryWrites=true&w=majority&appName=itzmeproman"
         },
                 "FFMPEG": {
             "description": "Put your FFMPEG code.",
-            "value": "ffmpeg -i \"{}\" -metadata:s:v:0 title=\"[Anime Compass] : (This Episode)\" -metadata:s:a:0 title=\"[Telegram: @Anime_Compass]\" -metadata:s:a:1 title=\"[Telegram: @Anime_Compass]\" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title=\"@Anime_Compass\" -metadata author=\"@Anime_Compass\" -metadata:s:s title=\"@Anime_Compass\" -metadata:s:a title=\"@Anime_Compass\" -metadata:s:v title=\"@Anime_compass\" -c:v libx265 -pix_fmt yuv420p10le -preset veryfast -s 480x360 -crf 28 -c:a libopus -ac 2 -vbr 2 -ab 64k -c:s copy -movflags +faststart -vf \"drawtext=fontfile=Imprima_Love.ttf:fontsize=27:fontcolor=white:bordercolor=black@0.50:x=w-tw-10:y=10:text=Anime Compass\" \"{}\" -y",
+            "value": "ffmpeg -i \"{}\" -metadata:s:v:0 title=\"[GI Toons] : (This Episode)\" -metadata:s:a:0 title=\"[Telegram: @Gi_Tamil_Cartoons]\" -metadata:s:a:1 title=\"[Telegram: @Gi_Tamil_Cartoons]\" -map 0:v? -map 0:a? -map 0:s? -map 0:t? -metadata title=\"@Gi_Tamil_Cartoons\" -metadata author=\"@Gi_Tamil_Cartoons\" -metadata:s:s title=\"@Gi_Tamil_Cartoons\" -metadata:s:a title=\"@Gi_Tamil_Cartoons\" -metadata:s:v title=\"@Gi_Tamil_Cartoons\" -c:v libx265 -pix_fmt yuv420p10le -preset veryfast -s 480x360 -crf 28 -c:a libopus -ac 2 -vbr 2 -ab 64k -c:s copy -movflags +faststart \"{}\" -y",
             "required": false
         }
     }
