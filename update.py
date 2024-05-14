@@ -15,7 +15,7 @@ try:
     UPSTREAM_REPO = config(
         "UPSTREAM_REPO",
         default="https://github.com/itzmeproman/enc")
-    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="main")
+    UPSTREAM_BRANCH = config("UPSTREAM_BRANCH", default="paid480")
 
 except Exception:
     print("Environment vars Missing")
