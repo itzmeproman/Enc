@@ -103,7 +103,7 @@ async def start(event, args, client):
     msg = ""
     msg1 = f"Hi `{event.sender.first_name}`\n"
     msg2 = (
-        f"{msg1}I've been alive for `{currentTime}` and i'm ready to encode videos 😗"
+        f"{msg1}I've been alive for `{currentTime}` and i'm ready to encode in group @Video_encoder 😗 . You can buy a subscription for your personal bot for 100rs per month with all these features including Waternark"
     )
     msg3 = f"{msg2}\nand by the way you're a temporary user"
     user = event.sender_id
@@ -126,12 +126,12 @@ async def start(event, args, client):
             [Button.inline("Help", data="ihelp")],
             [
                 Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    "Main Channel ",
+                    url="t.me/Anime_Vompass",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("Developer (Original)", url="t.me/Mr_bankaiiii"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("Owner", url="t.me/Mr_bankaiiii")],
         ],
     )
 
@@ -179,12 +179,12 @@ async def beck(event):
             [Button.inline("Help", data="ihelp")],
             [
                 Button.url(
-                    "Source-Code (Original)",
-                    url="github.com/1Danish-00/compressorqueue",
+                    "Main Channel ",
+                    url="t.me/Anime_Vompass",
                 ),
-                Button.url("Developer (Original)", url="t.me/danish_00"),
+                Button.url("Developer (Original)", url="t.me/Mr_bankaiiii"),
             ],
-            [Button.url("Fork Maintainer", url="t.me/Col_serra")],
+            [Button.url("Owner", url="t.me/Mr_bankaiiii")],
         ],
     )
 
