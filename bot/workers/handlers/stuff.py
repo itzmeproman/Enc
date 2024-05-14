@@ -127,7 +127,7 @@ async def start(event, args, client):
             [
                 Button.url(
                     "Main Channel ",
-                    url="t.me/Anime_Vompass",
+                    url="t.me/Anime_Compass",
                 ),
                 Button.url("Developer (Original)", url="t.me/Mr_bankaiiii"),
             ],
@@ -180,7 +180,7 @@ async def beck(event):
             [
                 Button.url(
                     "Main Channel ",
-                    url="t.me/Anime_Vompass",
+                    url="t.me/Anime_Compass",
                 ),
                 Button.url("Developer (Original)", url="t.me/Mr_bankaiiii"),
             ],
