@@ -29,7 +29,7 @@ class Config:
                 "API_HASH", default="eb06d4abfb49dc3eeb1aeb98ae0f581e"
             )
             self.ARIA2_PORT = config("ARIA2_PORT", default=6800, cast=int)
-            self.BOT_TOKEN = config("BOT_TOKEN")
+            self.BOT_TOKEN = config("7027816790:AAGBTg6cVKZH1jjwoM-fyMRl1S-KA8Getn8")
             self.CACHE_DL = config("CACHE_DL", default=False, cast=bool)
             self.CAP_DECO = config("CAP_DECO", default="◉")
             self.C_LINK = config("C_LINK", default="@Anime_Compass")
