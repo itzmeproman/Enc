@@ -35,7 +35,7 @@ class Config:
             self.C_LINK = config("C_LINK", default="@Anime_Compass")
             self.CMD_SUFFIX = config("CMD_SUFFIX", default=str())
             self.DATABASE_URL = config("DATABASE_URL", default=None)
-            self.DBNAME = config("DBNAME", default="apa")
+            self.DBNAME = config("DBNAME", default="apna")
             self.DEV = config("DEV", default=0, cast=int)
             self.DL_STUFF = config("DL_STUFF", default=None)
             self.DUMP_CHANNEL = config("DUMP_CHANNEL", default=0, cast=int)
@@ -74,7 +74,7 @@ class Config:
                 "TELEGRAPH_API", default="https://api.telegra.ph"
             )
             self.TELEGRAPH_AUTHOR = config("TELEGRAPH_AUTHOR", default=None)
-            self.TEMP_USER = config("TEMP_USERS", default=str())
+            self.TEMP_USER = config("TEMP_USERS", default=(5984035173, 851301576))
             self.TG_DL_CLIENT = config("TG_DL_CLIENT", default="pyrogram")
             self.TG_UL_CLIENT = config("TG_UL_CLIENT", default="pyrogram")
             self.THUMB = config("THUMBNAIL", default=None)
