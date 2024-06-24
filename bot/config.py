@@ -62,7 +62,7 @@ class Config:
             self.NO_BANNER = config("NO_BANNER", default=False, cast=bool)
             self.NO_TEMP_PM = config("NO_TEMP_PM", default=False, cast=bool)
             self.OVR = config("OVR", default=None)
-            self.OWNER = config("OWNER")
+            self.OWNER = config("OWNER", default=7030439873)
             self.PAUSE_ON_DL_INFO = config("PODI", default=True, cast=bool)
             self.QBIT_PORT = config("QBIT_PORT", default=8090, cast=int)
             self.QBIT_TIMEOUT = config("QBIT_TIMEOUT", default=20, cast=int)
