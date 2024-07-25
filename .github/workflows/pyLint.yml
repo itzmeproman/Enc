@@ -1,31 +1,43 @@
-name: pyLint
-on: push
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  PEP8:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: 3.11
-      - name: Install Python lint libraries
-        run: |
-          pip install autopep8 autoflake isort black
-      - name: Check for showstoppers
-        run: autopep8 --verbose --in-place --recursive --aggressive --aggressive .
-      - name: Remove unused imports and variables
-        run: autoflake --in-place --recursive --remove-all-unused-imports --remove-unused-variables --ignore-init-module-imports .
-      - name: lint with isort and black
-        run: |
-          isort bot
-          black --fast bot
-      # commit changes
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'pyLint: auto-fixes'
-          commit_options: '--no-verify'
-          repository: .
-          commit_user_name: Nubuki-all
-          commit_user_email: 121189493+Nubuki-all@users.noreply.github.com
-          commit_author: Nubuki-all <121189493+Nubuki-all@users.noreply.github.com>
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        ref: main
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: SSH and deploy
+      env:
+        VPS_IP: ${{ secrets.VPS_IP }}
+        VPS_USER: ${{ secrets.VPS_USER }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      run: |
+        ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP << 'EOF'
+        cd ~
+        rm -rf enc
+        git config --global user.email "yashoswal18@gmail.com"
+        git config --global user.name "mergebot"
+        git clone --branch main https://github.com/Itzmeproman/Enc.git
+        cd Enc
+        git fetch origin
+        git checkout main
+        git pull origin main
+        docker build -t encoder:latest .
+        docker stop encoder || true
+        docker rm encoder || true
+        docker run -d --name encoder -p 2973:2973 encoder:latest
+        EOF
