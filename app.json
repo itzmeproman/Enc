@@ -8,7 +8,7 @@
     "stack": "container",
     "env": {
         "ALWAYS_DEPLOY_LATEST": {
-            "description": "Whether to update on startup",
+            "description": "Whebther to update on startup",
             "value": "True",
             "required": false
         },
