@@ -13,7 +13,7 @@
             "required": false
         },
         "APP_ID": {
-            "description": "You api id, from my.telegram.org or @apiScrapperRoBot.",
+            "description": "You api id, from my.tgelegram.org or @apiScrapperRoBot.",
             "value": "25598099"
         },
         "RELEASER": {
